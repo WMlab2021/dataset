@@ -10,7 +10,7 @@ Each data set contains the original data of multiple testers, corresponding to P
 
 |                     |  right hip  |                     |  right knee |                     |  left hip |         |  left knee  |
 |         :--:        |        :--:          |        :--:         |       :--:      |         :--:        |      :--:      |         :--:        |      :--:     | 
-|image processing mode|sensor mode|image processing mode|sensor mode|image processing mode|sensor mode|image processing mode|sensor mode
+|image processing mode|     sensor mode    |image processing mode|   sensor mode   |image processing mode|   sensor mode    |image processing mode|   sensor mode
 |1.3428|1.3428|24.1699|24.1699|-8.4839|-8.4839|-3.1128|-3.1128|
 
 
