@@ -3,9 +3,10 @@ human gait data set
 ## Data description
 This data set is a human gait data set, which is collected by image processing mode and sensor mode. According to the three age groups of youth, middle age and old age and the two genders of male and female, the data sets are divided into six categories: young male, young female, middle-aged male, middle-aged female, old male and old female, corresponding to the data sets of young (m), young (f), mid age (m), mid age (f), elder (m) and elder (f).
 Each data set contains the original data of multiple testers, corresponding to P1,P2,…
-| Parameters           | Default s | Description                                                     |
-| :-----------------: | :----: | :----------------------------------------------------------: |
-| 0 | 1 | 2 |
+
+| 0 | 1 | 2 | 0 | 1 | 2 | 0 | 1 | 2 | 0 | 1 | 2 | 0 | 1 | 2 | 0 | 1 | 2 | 0 | 1 | 2 | 0 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--:
+|  p1  |  p2  |  p3  |  p4  |  p5  |  p6  |  p7  |  p8  |  p9  |  p10 |  p11 |  p12 |  p13 |  p14 |  p15 |  p16 |  p17 |  p18 |  p19 |  p20 |  p21 | p22
 
 Each tester's data includes the angular velocity (deg / s) of the hip and knee joints of the left and right legs collected by image processing mode and sensor mode. The data format is as follows: from left to right, the angular velocity of the right hip (collected by image processing), the angular velocity of the right hip (collected by sensor), the angular velocity of the right knee (collected by image processing), the angular velocity of the right knee (collected by sensor), the angular velocity of the left hip (collected by image processing), the angular velocity of the left hip joint (collected by sensors), the angular velocity of the left knee joint (collected by image processing), and the angular velocity of the left knee joint (collected by sensors). Because the frame rate of RGB camera is not high enough, the data acquisition frequency of image processing mode is lower than that of sensor mode, that is, the data acquisition frequency of each joint image processing mode is less than that of sensor mode.
 
