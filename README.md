@@ -5,6 +5,7 @@ This data set is a human gait data set, which is collected by image processing m
 Each data set contains the original data of multiple testers, corresponding to P1,P2,…
 | Parameters           | Default s | Description                                                     |
 | :-----------------: | :----: | :----------------------------------------------------------: |
+| 0 | 1 | 2 |
 
 Each tester's data includes the angular velocity (deg / s) of the hip and knee joints of the left and right legs collected by image processing mode and sensor mode. The data format is as follows: from left to right, the angular velocity of the right hip (collected by image processing), the angular velocity of the right hip (collected by sensor), the angular velocity of the right knee (collected by image processing), the angular velocity of the right knee (collected by sensor), the angular velocity of the left hip (collected by image processing), the angular velocity of the left hip joint (collected by sensors), the angular velocity of the left knee joint (collected by image processing), and the angular velocity of the left knee joint (collected by sensors). Because the frame rate of RGB camera is not high enough, the data acquisition frequency of image processing mode is lower than that of sensor mode, that is, the data acquisition frequency of each joint image processing mode is less than that of sensor mode.
 
