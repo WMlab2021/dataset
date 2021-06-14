@@ -1,31 +1,21 @@
-# Data description
-  This data set is a human gait data set, which is collected by image processing mode and sensor mode. According to the three age groups of youth, middle age and old age and the two genders of male and female, the data sets are divided into six categories: young male, young female, middle-aged male, middle-aged female, old male and old female, corresponding to the data sets of young (m), young (f), mid age (m), mid age (f), elder (m) and elder (f).
-Each data set contains the original data of multiple testers, corresponding to P1,P2,…
+# Human Gait Data Set
+  This data set is first utilized in the following research work:
+  QARE：QoE-Driven Intelligent Balance Enhancement for Lower-limb Exoskeleton Rehabilitation Robots, submitted to ACM MM’21.
+  Please cite this article when using the data set. 
+  
+  This human gait data set contains two subsets: (1) the angular velocity traces of human walking gaits; (2) the Mean Opinion Scores (MOS) collected from 15 subjects when wearing the lower-limb exoskeleton robot (i.e. Fourier X2 from Fourier Intelligence). 
+  For the first part, subjects are divided into six categories: young male, young female, middle-aged male, middle-aged female, elder male and elder female, corresponding to the data sets of young (m), young (f), mid age (m), mid age (f), elder (m) and elder (f). The angular velocity traces are obtained via two modalities, i.e. the visual modality (VM) and the sensor modality (SM). For the VM, six marker points are attached to the hip joint, knee joint and the lower part of both leg of a subject. We use a RGB camera to capture the human walking video, extract the mark points with image processing method, obtain the angle information between any two frames, so as to calculate the rotation angular velocity of the hip joint and knee joint of two legs at any time. For the SM, angular velocity traces are collected by attaching 4 MPU6050 angular accelerometers to the hip and knee joints of both legs of a subject, the same positions as that of markers in the VM. In summary, we establish a data set with a total of 23398 sets of human gaits data, as shown below
+  1. Young(M) contains 4848 sets of gait data of 21 subjects;
+  2. Young(F) contains 3982 sets of gait data of 21 subjects;
+  3. Mid-age(M) contains 3068 sets of gait data of 13 subjects;
+  4. Mid-age(F) contains 3032 sets of gait data of 15 subjects;
+  5. Elder(M) contains 3660 sets of gait data of 15 subjects;
+  6. Elder(F) contains 4808 sets of gait data of 18 subjects.
+  For each file, the data format is as follows (from left to right): the angular velocities of the right hip in VM, the right hip in SM, the right knee in VM, the right knee in SM, the left hip in VM, the left hip in SM, the left knee in VM, and the left knee in SM. Subjects are denoted as p1, p2, ….
 
-| | | | | | | | | | | | | | | | | | | | | | |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--:
-|  p1  |  p2  |  p3  |  p4  |  p5  |  p6  |  p7  |  p8  |  p9  |  p10 |  p11 |  p12 |  p13 |  p14 |  p15 |  p16 |  p17 |  p18 |  p19 |  p20 |  p21 | p22
-
-  Each tester's data includes the angular velocity (deg / s) of the hip and knee joints of the left and right legs collected by image processing mode and sensor mode. The data format is as follows: from left to right, the angular velocity of the right hip (collected by image processing), the angular velocity of the right hip (collected by sensor), the angular velocity of the right knee (collected by image processing), the angular velocity of the right knee (collected by sensor), the angular velocity of the left hip (collected by image processing), the angular velocity of the left hip joint (collected by sensors), the angular velocity of the left knee joint (collected by image processing), and the angular velocity of the left knee joint (collected by sensors). Because the frame rate of RGB camera is not high enough, the data acquisition frequency of image processing mode is lower than that of sensor mode, that is, the data acquisition frequency of each joint image processing mode is less than that of sensor mode.
-
-|    |right hip             |    |right knee       |    |left hip        |    |left knee      |
-|:--:|        :--:          |:--:|       :--:      |:--:|      :--:      |:--:|      :--:     | 
-|image processing mode|     sensor mode    |image processing mode|   sensor mode   |image processing mode|   sensor mode    |image processing mode|   sensor mode
-|1.3428|1.3428|24.1699|24.1699|-8.4839|-8.4839|-3.1128|-3.1128|
+This dataset also contains a QoE-related subset, with MOSs collected from 15 subjects when wearing the lower-limb exoskeleton robot, which is denoted as gait_QoE. The data format is as follows (from left to right):
+Time, angular velocity of the hip joint, angular velocity of the knee joint, average QoE score, QoE score of subject 1, subject 2, …, subject 15.
+This QoE subset is utilized in the personalized gait prediction module in the above mentioned article.
 
 
-Among them:
-1. Young(M) contains 4848 sets of gait data of 21 subjects;
-2. Young(F) contains 3982 sets of gait data of 21 subjects;
-3. Mid-age(M) contains 3068 sets of gait data of 13 subjects;
-4. Mid-age(F) contains 3032 sets of gait data of 15 subjects;
-5. Elder(M) contains 3660 sets of gait data of 15 subjects;
-6. Elder(F) contains 4808 sets of gait data of 18 subjects.
 
-  Gait_ QoE data set is classified gait model and corresponding QoE (quality of experience), which is obtained by subjective test. The data format is as follows:
-
-|time|gait（hip）|gait（knee）|QoE|test1|test2|test3|test4|test5|test6|test7|test8|test9|test10|test11|test12|test13|test14|test15|
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-|0.02|4.3945|2.2583|2.93333|3|4|3|3|3|2|3|3|3|2|4|3|3|3|3|
-
-  Among them, QoE is the average of 15 test1-test15. The data set is used to realize the personalized gait prediction model.
