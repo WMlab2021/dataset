@@ -1,8 +1,8 @@
 <p align="center">Human Gait Data Set</p>  
 
-This data set is first utilized in the following research work:
-QARE：QoE-Driven Intelligent Balance Enhancement for Lower-limb Exoskeleton Rehabilitation Robots, submitted to ACM MM’21.
-Please cite this article when using the data set. 
+This data set is first utilized in the following research work:  
+QARE：QoE-Driven Intelligent Balance Enhancement for Lower-limb Exoskeleton Rehabilitation Robots, submitted to ACM MM’21.  
+Please cite this article when using the data set.   
   
 This human gait data set contains two subsets: (1) the angular velocity traces of human walking gaits; (2) the Mean Opinion Scores (MOS) collected from 15 subjects when wearing the lower-limb exoskeleton robot (i.e. Fourier X2 from Fourier Intelligence). 
 
