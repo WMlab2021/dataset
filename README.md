@@ -1,6 +1,6 @@
 <p align="center">Human Gait Data Set</p>  
 
-  &#8194This data set is first utilized in the following research work:  
+  This data set is first utilized in the following research work:  
   
   QARE：QoE-Driven Intelligent Balance Enhancement for Lower-limb Exoskeleton Rehabilitation Robots, submitted to ACM MM’21.  
   
