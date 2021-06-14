@@ -13,8 +13,7 @@ For the first part, subjects are divided into six categories: young male, young 
 4. Mid-age(F) contains 3032 sets of gait data of 15 subjects;
 5. Elder(M) contains 3660 sets of gait data of 15 subjects;
 6. Elder(F) contains 4808 sets of gait data of 18 subjects.
-
-For each file, the data format is as follows (from left to right): the angular velocities of the right hip in VM, the right hip in SM, the right knee in VM, the right knee in SM, the left hip in VM, the left hip in SM, the left knee in VM, and the left knee in SM. Subjects are denoted as p1, p2, ….
+    For each file, the data format is as follows (from left to right): the angular velocities of the right hip in VM, the right hip in SM, the right knee in VM, the right knee in SM, the left hip in VM, the left hip in SM, the left knee in VM, and the left knee in SM. Subjects are denoted as p1, p2, ….
 
 This dataset also contains a QoE-related subset, with MOSs collected from 15 subjects when wearing the lower-limb exoskeleton robot, which is denoted as gait_QoE. The data format is as follows (from left to right):
 Time, angular velocity of the hip joint, angular velocity of the knee joint, average QoE score, QoE score of subject 1, subject 2, …, subject 15.   
