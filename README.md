@@ -15,12 +15,12 @@ Each data set contains the original data of multiple testers, corresponding to P
 
 
 Among them:
-1. Young (m) contains 22 subjects with 5500 sets of gait data;
-2. Young (f) contains 5000 sets of gait data of 21 subjects;
-3. Mid age (m) contains 3000 sets of gait data of 13 subjects;
-4. Mid age (f) contains 3500 gait data of 15 subjects;
-5. The elder (m) contains 3500 gait data of 15 subjects;
-6. Elder (f) consists of 18 subjects with 4000 sets of gait data.
+1. Young(M) contains 4848 sets of gait data of 21 subjects;
+2. Young(F) contains 3982 sets of gait data of 21 subjects;
+3. Mid-age(M) contains 3068 sets of gait data of 13 subjects;
+4. Mid-age(F) contains 3032 sets of gait data of 15 subjects;
+5. Elder(M) contains 3660 sets of gait data of 15 subjects;
+6. Elder(F) contains 4808 sets of gait data of 18 subjects.
 
   Gait_ QoE data set is classified gait model and corresponding QoE (quality of experience), which is obtained by subjective test. The data format is as follows:
 
